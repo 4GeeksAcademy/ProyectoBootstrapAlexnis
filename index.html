@@ -9,19 +9,17 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Document</title>
+    <title>Instragam Post</title>
 </head>
 
 <body>
-
-
     <div class="container-fluid d-flex justify-content-between">
-        <div>
+        <div class="p-3">
             <i class="fa-brands fa-instagram"></i>
             <strong>Instagram</strong>
         </div>
-        <div class="d-flex gap-2">
-            <!-- Buton crea nuevo post -->
+        <!-- Buton crea nuevo post -->
+        <div class="d-flex gap-2 p-3">
             <div>
                 <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                     Create a new post
@@ -48,7 +46,6 @@
                             <button type="button" class="btn btn-light"><i class="fa-solid fa-camera"></i></button>
                             <button type="button" class="btn btn-light"><i
                                     class="fa-solid fa-location-dot"></i></button>
-
                         </div>
 
                         <div class="modal-footer">
@@ -59,7 +56,7 @@
                 </div>
             </div>
 
-            <!--Boton de opciones-->
+            <!--Boton de setting-->
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
                     aria-expanded="false"><i class="fa-solid fa-gear"></i>
@@ -77,8 +74,7 @@
 
         </div>
     </div>
-
-
+    <!-- Botones de cambio de vista (square/grid) -->
     <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
             <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
@@ -91,7 +87,7 @@
                     class="fa-solid fa-square"></i></button>
         </li>
     </ul>
-
+    <!-- Contenedores para la vista de solo imagenes -->
     <div class="tab-content container-fluid" id="myTabContent">
         <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
             tabindex="0">
@@ -156,11 +152,13 @@
                 </div>
             </div>
         </div>
-        <div class="tab-pane fade d-flex justify-content-center" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+        <!-- Contenedores para la vista tarjeta (imagenes y texto) -->
+        <div class="tab-pane fade d-flex justify-content-center" id="profile-tab-pane" role="tabpanel"
+            aria-labelledby="profile-tab" tabindex="0">
             <div>
                 <div class="card m-2" style="width: 25rem;">
                     <div class="d-flex justify-content-between px-2">
-                        <h5 class="card-title">Yorkshire</h5> 
+                        <h5 class="card-title">Yorkshire</h5>
                         <small>08/25</small>
                     </div>
                     <img src="https://media.gettyimages.com/id/157287423/es/foto/linda-perro-sentado-en-el-c%C3%A9sped.jpg?s=612x612&w=gi&k=20&c=4E7p7DHS30jkxNQvsF-SwxUBEO5k4lUya23el8ZLwyA="
@@ -174,12 +172,12 @@
                     </div>
                 </div>
 
-                 <div class="card m-2" style="width: 25rem;">
+                <div class="card m-2" style="width: 25rem;">
                     <div class="d-flex justify-content-between px-2">
-                        <h5 class="card-title">Yorkshire</h5> 
+                        <h5 class="card-title">Galaxias</h5>
                         <small>08/25</small>
                     </div>
-                    <img src="https://media.gettyimages.com/id/157287423/es/foto/linda-perro-sentado-en-el-c%C3%A9sped.jpg?s=612x612&w=gi&k=20&c=4E7p7DHS30jkxNQvsF-SwxUBEO5k4lUya23el8ZLwyA="
+                    <img src="https://media.istockphoto.com/id/91713709/es/foto/galaxia-de-espacio.jpg?s=612x612&w=0&k=20&c=R8a1rEbSuMPiRgHsOR8Gmn1QdPwRWux0ONCmQ2HsOyA="
                         alt="...">
                     <div class="card-body">
                         <strong>204 Likes</strong>
@@ -190,12 +188,27 @@
                     </div>
                 </div>
 
-                 <div class="card m-2" style="width: 25rem;">
+                <div class="card m-2" style="width: 25rem;">
                     <div class="d-flex justify-content-between px-2">
-                        <h5 class="card-title">Yorkshire</h5> 
+                        <h5 class="card-title">UEFA Womens</h5>
                         <small>08/25</small>
                     </div>
-                    <img src="https://media.gettyimages.com/id/157287423/es/foto/linda-perro-sentado-en-el-c%C3%A9sped.jpg?s=612x612&w=gi&k=20&c=4E7p7DHS30jkxNQvsF-SwxUBEO5k4lUya23el8ZLwyA="
+                    <img src="https://img2.rtve.es/v/16595473?w=1600&preview=01748112584081.jpg" alt="...">
+                    <div class="card-body">
+                        <strong>204 Likes</strong>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card’s
+                            content.</p>
+                    </div>
+                </div>
+
+                <div class="card m-2" style="width: 25rem;">
+                    <div class="d-flex justify-content-between px-2">
+                        <h5 class="card-title">Programacion Web</h5>
+                        <small>08/25</small>
+                    </div>
+                    <img src="https://dinahosting.com/blog/upload/2018/06/lenguajes-de-programaci%C3%B3n-1-1.jpg"
                         alt="...">
                     <div class="card-body">
                         <strong>204 Likes</strong>
@@ -206,12 +219,27 @@
                     </div>
                 </div>
 
-                 <div class="card m-2" style="width: 25rem;">
+                <div class="card m-2" style="width: 25rem;">
                     <div class="d-flex justify-content-between px-2">
-                        <h5 class="card-title">Yorkshire</h5> 
+                        <h5 class="card-title">Festival</h5>
                         <small>08/25</small>
                     </div>
-                    <img src="https://media.gettyimages.com/id/157287423/es/foto/linda-perro-sentado-en-el-c%C3%A9sped.jpg?s=612x612&w=gi&k=20&c=4E7p7DHS30jkxNQvsF-SwxUBEO5k4lUya23el8ZLwyA="
+                    <img src="https://meraviglia.es/wp-content/uploads/2019/05/Festival-Arenal-Sound.jpg" alt="...">
+                    <div class="card-body">
+                        <strong>204 Likes</strong>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card’s
+                            content.</p>
+                    </div>
+                </div>
+
+                <div class="card m-2" style="width: 25rem;">
+                    <div class="d-flex justify-content-between px-2">
+                        <h5 class="card-title">Invierno</h5>
+                        <small>08/25</small>
+                    </div>
+                    <img src="https://www.lavanguardia.com/files/og_thumbnail/uploads/2019/12/16/5fa5856db0d7e.jpeg"
                         alt="...">
                     <div class="card-body">
                         <strong>204 Likes</strong>
@@ -221,41 +249,57 @@
                             content.</p>
                     </div>
                 </div>
+
+                <div class="card m-2" style="width: 25rem;">
+                    <div class="d-flex justify-content-between px-2">
+                        <h5 class="card-title">Santorini</h5>
+                        <small>08/25</small>
+                    </div>
+                    <img src="https://cdn2.paraty.es/demo14/images/ef7d8f6c8bff807" alt="...">
+                    <div class="card-body">
+                        <strong>204 Likes</strong>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card’s
+                            content.</p>
+                    </div>
+                </div>
+
+                <div class="card m-2" style="width: 25rem;">
+                    <div class="d-flex justify-content-between px-2">
+                        <h5 class="card-title">Senderismo</h5>
+                        <small>08/25</small>
+                    </div>
+                    <img src="https://www.webconsultas.com/sites/default/files/media/2020/07/15/senderismo_p.jpg"
+                        alt="...">
+                    <div class="card-body">
+                        <strong>204 Likes</strong>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card’s
+                            content.</p>
+                    </div>
+                </div>
+
+                <div class="card m-2" style="width: 25rem;">
+                    <div class="d-flex justify-content-between px-2">
+                        <h5 class="card-title">Musica</h5>
+                        <small>08/25</small>
+                    </div>
+                    <img src="https://ruizhealytimes.com/wp-content/uploads/2015/07/musica.jpg" alt="...">
+                    <div class="card-body">
+                        <strong>204 Likes</strong>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card’s
+                            content.</p>
+                    </div>
+                </div>
+
             </div>
 
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
